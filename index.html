@@ -1,0 +1,61 @@
+
+    <!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" type="image/svg+xml" href="https://img.icons8.com/?size=100&id=PxOoKPw7MnKW&format=png&color=000000" />
+  <title>BMW m4 Competition</title>
+<link rel="stylesheet" href="globals.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="hero">
+        <div class="slides">
+            <div class="slide">
+                <div class="desktop" ><img class="img" src="img/d94a643f26453333ad4354daad504b9c_1.png" />
+                <img class="OIP-photoroom" src="img/OIP-Photoroom_1.png" />
+                <img class="image-photoroom" src="img/image-Photoroom__3__1.png" />
+                <img class="image-photoroom-2" src="img/image-Photoroom__3__3.png" />
+                <img class="image-photoroom-3" src="img/image-Photoroom__3__2.png" />
+                <img class="image-photoroom-4" src="img/image-Photoroom__1__1.png" /></div>
+            </div>
+
+            <div class="slide">
+                <div class="desktop" ><img class="img" src="img/image_2.png" />
+                <img class="OIP-photoroom" src="img/OIP-Photoroom_1.png" />
+                <img class="image-photoroom" src="img/image-Photoroom__3__1.png" />
+                <img class="image-photoroom-2" src="img/image-Photoroom__3__3.png" />
+                <img class="image-photoroom-3" src="img/image-Photoroom__3__2.png" />
+                <img class="image-photoroom-4" src="img/image-Photoroom__1__1.png" /></div>
+            </div>
+
+            <div class="slide">
+                <div class="desktop" ><img class="img" src="img/f9546567baacbb4b5df31f3c443d820f_1.png" />
+                <img class="OIP-photoroom" src="img/OIP-Photoroom_1.png" />
+                <img class="image-photoroom" src="img/image-Photoroom__3__1.png" />
+                <img class="image-photoroom-2" src="img/image-Photoroom__3__3.png" />
+                <img class="image-photoroom-3" src="img/image-Photoroom__3__2.png" />
+                <img class="image-photoroom-4" src="img/image-Photoroom__1__1.png" /></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        (function(){
+            const container = document.querySelector('.slides');
+            const slides = document.querySelectorAll('.slide');
+            let idx = 0;
+            function go(i){ container.style.transform = `translateX(-${i*100}%)`; }
+            setInterval(()=>{ idx = (idx + 1) % slides.length; go(idx); }, 5000);
+            go(0);
+        })();
+    </script>
+    
+        <!-- Section 2: single full-width image -->
+        <section class="section-two single-tile">
+            <img src="img/image_1.png" alt="section image" class="single-image">
+        </section>
+</body>
+</html>

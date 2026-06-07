@@ -1,0 +1,205 @@
+.desktop {
+  background-color: #ffffff;
+  width: 100%;
+  min-width: 1440px;
+  min-height: 812px;
+  position: relative;
+}
+
+.desktop .img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1440px;
+  height: 812px;
+  aspect-ratio: 1.5;
+  object-fit: cover;
+}
+
+.desktop .OIP-photoroom {
+  position: absolute;
+  top: 8px;
+  left: 0;
+  width: 108px;
+  height: 89px;
+  aspect-ratio: 1.34;
+  object-fit: cover;
+}
+
+.desktop .image-photoroom {
+  position: absolute;
+  top: 97px;
+  left: 10px;
+  width: 358px;
+  height: 41px;
+  aspect-ratio: 8.73;
+}
+
+.desktop .image-photoroom-2 {
+  position: absolute;
+  top: 655px;
+  left: 995px;
+  width: 364px;
+  height: 72px;
+  aspect-ratio: 5.05;
+}
+
+.desktop .image-photoroom-3 {
+  position: absolute;
+  top: 615px;
+  left: 29px;
+  width: 364px;
+  height: 152px;
+  aspect-ratio: 2.4;
+}
+
+.desktop .image-photoroom-4 {
+  position: absolute;
+  top: 8px;
+  left: 88px;
+  width: 1300px;
+  height: 81px;
+  aspect-ratio: 16.02;
+}
+
+/* Hero slider styles */
+.hero {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.slides {
+  display: flex;
+  transition: transform 0.6s ease;
+  width: 100%;
+}
+.slide {
+  flex: 0 0 100%;
+}
+
+/* Make inner .desktop scale responsively inside slide */
+.slide .desktop { min-width: 0; }
+
+/* Fullscreen hero overrides: make hero occupy viewport and remove gaps */
+.hero {
+  width: 100vw;
+  height: 100vh;
+  max-width: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.slides {
+  display: flex;
+  transition: transform 0.6s ease;
+  width: 100%;
+  height: 100vh;
+  gap: 0;
+}
+.slide {
+  flex: 0 0 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+.hero .desktop {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-width: 0;
+  min-height: 0;
+  overflow: hidden;
+}
+.hero .desktop .img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.hero .desktop img { display: block; }
+
+/* Responsive overlay positions for consistent layout across slides */
+.hero .desktop .OIP-photoroom {
+  position: absolute;
+  top: 1%;
+  left: 1%;
+  width: 7.5%;
+  height: auto;
+  object-fit: contain;
+}
+.hero .desktop .image-photoroom {
+  position: absolute;
+  top: 12%;
+  left: 1%;
+  width: 25%;
+  height: auto;
+}
+.hero .desktop .image-photoroom-4 {
+  position: absolute;
+  top: 1%;
+  left: 6%;
+  width: 90%;
+  height: auto;
+}
+.hero .desktop .image-photoroom-3 {
+  position: absolute;
+  top: 75%;
+  left: 2%;
+  width: 25%;
+  height: auto;
+}
+.hero .desktop .image-photoroom-2 {
+  position: absolute;
+  top: 80%;
+  left: 69%;
+  width: 25%;
+  height: auto;
+}
+
+/* Section-two styles: three full-height tiles side-by-side */
+.section-two {
+  display: flex;
+  width: 100vw;
+  max-width: none;
+  margin: 0;
+  padding: 0;
+}
+.section-two .tile {
+  flex: 1 1 33.3333%;
+  height: 60vh;
+  overflow: hidden;
+}
+.section-two .tile img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+@media (max-width: 800px) {
+  .section-two { flex-direction: column; }
+  .section-two .tile { height: 40vh; }
+}
+
+/* Single-tile override: use full-width image */
+.section-two.single-tile { display: block; }
+.section-two.single-tile {
+  display: block;
+  width: 100%;
+}
+.section-two.single-tile .single-image {
+  width: 100%;
+  max-width: none;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: 800px) {
+  .section-two.single-tile .single-image { width: 100%; height: auto; }
+}
