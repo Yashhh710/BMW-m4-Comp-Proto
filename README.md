@@ -26,6 +26,7 @@ https://your-live-demo-link.com
 ## 🛠️ Tech & Design
 
 * Figma
+* <img width="818" height="666" alt="Image" src="https://github.com/user-attachments/assets/fc0e627f-2b44-4a54-8ae6-fae1500ccfd5" />
 * Modern UI Design
 * Automotive Inspired Visuals
 * Smooth Prototype Interactions
