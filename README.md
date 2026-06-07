@@ -20,8 +20,7 @@ https://www.figma.com/proto/cMOPj9NHodRGUaQdh2SVcX/Untitled?node-id=5-129&p=f&t=
 
 ## 🌐 Live Demo
 
-Live demo link:
-https://your-live-demo-link.com
+Live demo link: https://yashhh710.github.io/BMW-m4-Comp-Proto/
 
 ## 🛠️ Tech & Design
 
