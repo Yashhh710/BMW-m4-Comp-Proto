@@ -15,12 +15,11 @@ This project showcases a high-performance sports car landing page concept with:
 
 ## 🎨 Prototype Link
 
-View the Figma prototype here:
 https://www.figma.com/proto/cMOPj9NHodRGUaQdh2SVcX/Untitled?node-id=5-129&p=f&t=sHvvEUsegkcbGvhl-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=5%3A129
 
 ## 🌐 Live Demo
 
-Live demo link: https://yashhh710.github.io/BMW-m4-Comp-Proto/
+https://yashhh710.github.io/BMW-m4-Comp-Proto/
 
 ## 🛠️ Tech & Design
 
